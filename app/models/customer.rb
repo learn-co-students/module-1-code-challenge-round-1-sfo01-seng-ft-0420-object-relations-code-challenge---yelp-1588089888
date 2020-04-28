@@ -33,7 +33,7 @@ class Customer
   end
 
   def self.find_by_name(name)
-    all.find{|cust| [cust.given_name, cust.family_name] == name.split} #Stay destructuring, my friends
+    all.find{|cust| [cust.given_name, cust.family_name] == name.split} #Stay destructuring, my friends!
   end
 
   def self.find_all_by_given_name(name)
